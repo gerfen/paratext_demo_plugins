@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30804.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParatextHelloWorldMenuPlugin", "ParatextHelloWorldMenuPlugin\ParatextHelloWorldMenuPlugin.csproj", "{CB32A400-6C60-4813-A122-8D576B8BF5C0}"
 EndProject
@@ -56,6 +56,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferencePluginM", "ReferencePluginM\ReferencePluginM.csproj", "{C89E4F9E-B999-4814-936C-D39AE6FD1B68}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferencePluginN", "ReferencePluginN\ReferencePluginN.csproj", "{5B2EC247-8076-4D98-AD0A-1EB6AAAD11DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiPlugin", "WebApiPlugin\WebApiPlugin.csproj", "{0CF49F69-0E10-44EC-9DAA-DDD20E04F986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiPluginTests", "WebApiPluginTests\WebApiPluginTests.csproj", "{FA6F54F4-6ADF-4BDF-B2B1-70485E272981}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -229,6 +233,22 @@ Global
 		{5B2EC247-8076-4D98-AD0A-1EB6AAAD11DC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B2EC247-8076-4D98-AD0A-1EB6AAAD11DC}.Release|x64.ActiveCfg = Release|x64
 		{5B2EC247-8076-4D98-AD0A-1EB6AAAD11DC}.Release|x64.Build.0 = Release|x64
+		{0CF49F69-0E10-44EC-9DAA-DDD20E04F986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF49F69-0E10-44EC-9DAA-DDD20E04F986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF49F69-0E10-44EC-9DAA-DDD20E04F986}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0CF49F69-0E10-44EC-9DAA-DDD20E04F986}.Debug|x64.Build.0 = Debug|Any CPU
+		{0CF49F69-0E10-44EC-9DAA-DDD20E04F986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF49F69-0E10-44EC-9DAA-DDD20E04F986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF49F69-0E10-44EC-9DAA-DDD20E04F986}.Release|x64.ActiveCfg = Release|Any CPU
+		{0CF49F69-0E10-44EC-9DAA-DDD20E04F986}.Release|x64.Build.0 = Release|Any CPU
+		{FA6F54F4-6ADF-4BDF-B2B1-70485E272981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6F54F4-6ADF-4BDF-B2B1-70485E272981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6F54F4-6ADF-4BDF-B2B1-70485E272981}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FA6F54F4-6ADF-4BDF-B2B1-70485E272981}.Debug|x64.Build.0 = Debug|Any CPU
+		{FA6F54F4-6ADF-4BDF-B2B1-70485E272981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6F54F4-6ADF-4BDF-B2B1-70485E272981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6F54F4-6ADF-4BDF-B2B1-70485E272981}.Release|x64.ActiveCfg = Release|Any CPU
+		{FA6F54F4-6ADF-4BDF-B2B1-70485E272981}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
