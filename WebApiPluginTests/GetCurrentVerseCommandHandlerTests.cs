@@ -1,12 +1,11 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
+using WebApiPlugin.Common.Features.Verse;
 using WebApiPlugin.Features;
-using WebApiPlugin.Features.Verse;
-using WebApiPluginTests;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace ClearDashboard.WebApiParatextPlugin.Tests;
+namespace WebApiPluginTests;
 
 public class GetCurrentVerseCommandHandlerTests : TestBase
 {

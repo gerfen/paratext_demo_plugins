@@ -4,10 +4,10 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Paratext.PluginInterfaces;
+using WebApiPlugin.Common.Features.Verse;
 
 namespace WebApiPlugin.Features.Verse
 {
-    public record GetCurrentVerseCommand() : IRequest<QueryResult<string>>;
 
     public class GetCurrentVerseCommandHandler : IRequestHandler<GetCurrentVerseCommand, QueryResult<string>>
     {

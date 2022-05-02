@@ -76,6 +76,10 @@
 	  <Folder Include="Properties\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\WebApiPlugin.Common\WebApiPlugin.Common.csproj" />
+	</ItemGroup>
+
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="rem call $(ProjectDir)postbuild.bat" />
 	</Target>
