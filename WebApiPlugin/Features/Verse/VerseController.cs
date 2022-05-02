@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using WebApiPlugin.Common.Features.Verse;
 
 namespace WebApiPlugin.Features.Verse
 {

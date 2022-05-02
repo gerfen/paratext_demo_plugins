@@ -31,10 +31,7 @@ namespace WebApiPlugin
 		{
             this.rtb = new System.Windows.Forms.RichTextBox();
             this.lblVersion = new System.Windows.Forms.Label();
-            this.btnRestart = new System.Windows.Forms.Button();
             this.btnTest = new System.Windows.Forms.Button();
-            this.listBoxClients = new System.Windows.Forms.ListBox();
-            this.btnExportUSFM = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rtb
@@ -75,10 +72,7 @@ namespace WebApiPlugin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnExportUSFM);
-            this.Controls.Add(this.listBoxClients);
             this.Controls.Add(this.btnTest);
-            this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.rtb);
             this.Name = "MainWindow";
@@ -91,9 +85,7 @@ namespace WebApiPlugin
 		#endregion
         private System.Windows.Forms.RichTextBox rtb;
         private System.Windows.Forms.Label lblVersion;
-        private System.Windows.Forms.Button btnRestart;
         private System.Windows.Forms.Button btnTest;
-        private System.Windows.Forms.ListBox listBoxClients;
-        private System.Windows.Forms.Button btnExportUSFM;
+
     }
 }

@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Features\QueryResultT.cs" />
     <Compile Include="Features\Verse\VerseSlice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

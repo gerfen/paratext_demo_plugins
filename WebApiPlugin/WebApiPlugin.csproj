@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net472</TargetFramework>
+		<TargetFramework>net48</TargetFramework>
 		<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
 		<PlatformTarget>x64</PlatformTarget>
 		<AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
@@ -81,7 +81,7 @@
 	</ItemGroup>
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="rem call $(ProjectDir)postbuild.bat" />
+		<Exec Command="call $(ProjectDir)postbuild.bat" />
 	</Target>
 
 </Project>
