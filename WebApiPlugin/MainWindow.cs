@@ -1,18 +1,15 @@
-﻿using System;
-using System.Drawing;
-using System.Reflection;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using MediatR;
+﻿using MediatR;
 using Microsoft.AspNet.SignalR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Owin.Hosting;
-//using Microsoft.VisualStudio.Threading;
 using Paratext.PluginInterfaces;
 using Serilog;
-using WebApiPlugin.Hubs;
+using System;
+using System.Drawing;
+using System.Reflection;
+using System.Text.RegularExpressions;
 using WebApiPlugin.Extensions;
+using WebApiPlugin.Hubs;
 
 namespace WebApiPlugin
 {
@@ -191,28 +188,8 @@ namespace WebApiPlugin
             if (newReference != _verseRef)
             {
                 _verseRef = newReference;
-                GetCurrentVerseAsync();
             }
         }
-
-
-
-
-        /// <summary>
-        /// Send out the current verse through the pipe
-        /// </summary>
-        /// <returns></returns>
-        private void GetCurrentVerseAsync()
-        {
-            string verseId = _verseRef.BBBCCCVVV.ToString();
-            if (verseId.Length < 8)
-            {
-                verseId = verseId.PadLeft(8, '0');
-            }
-
-
-        }
-
 
         public void AppendText(Color color, string message)
         {
@@ -234,7 +211,6 @@ namespace WebApiPlugin
 
         private void btnTest_Click(object sender, EventArgs e)
         {
-            //var hubProxy = (IHubContext<PluginHub>)GlobalHost.DependencyResolver.GetService(typeof(IHubContext<PluginHub>)); //.GetService<IHubContext<PluginHub>>();
             var hubProxy = GlobalHost.ConnectionManager.GetHubContext<PluginHub>();
             if (hubProxy == null)
             {
