@@ -4,6 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="IF &quot;%25ParatextInstallDir%25&quot; == &quot;&quot; goto nocopy&#xD;&#xA;IF NOT EXIST &quot;%25ParatextInstallDir%25&quot; goto nocopy&#xD;&#xA;&#xD;&#xA;@echo Copying files to %25ParatextInstallDir%25\plugins\$(ProjectName)&#xD;&#xA;xcopy &quot;$(TargetPath)&quot; &quot;%25ParatextInstallDir%25\plugins\$(ProjectName)\*.ptxplg&quot; /y /i&#xD;&#xA;xcopy &quot;$(TargetDir)$(TargetName).pdb&quot; &quot;%25ParatextInstallDir%25\plugins\$(ProjectName)&quot; /y /i&#xD;&#xA;&#xD;&#xA;:nocopy" />
   </Target>
